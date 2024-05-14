@@ -28,7 +28,7 @@
 - 目录
 - [1. 介绍](docs/01-introduction.md)
 - [2. 客户端注册](docs/02-client-registration.md)
-- 3\. 协议端点
+- [3. 协议端点](docs/03-protocol-endpoints.md)
 - 4\. 许可类型
 - 5\. 资源请求
 - 6\. 扩展性能

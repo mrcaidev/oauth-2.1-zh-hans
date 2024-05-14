@@ -39,7 +39,7 @@
 - 11\. IANA 考量
 - 12\. 参考文献
 - A. 增强巴科斯范式语法
-- B. 使用 `application/x-www-form-urlencoded` 媒体类型
+- B. 使用 application/x-www-form-urlencoded 媒体类型
 - C. 扩展
 - D. 致谢
 - E. 文档历史

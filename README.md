@@ -31,8 +31,8 @@
 - [3. 协议端点](docs/03-protocol-endpoints.md)
 - [4. 许可类型](docs/04-grant-types.md)
 - [5. 资源请求](docs/05-resource-requests.md)
-- 6\. 扩展性能
-- 7\. 安全考量
+- [6. 扩展性能](docs/06-extensibility.md)
+- [7. 安全考量](docs/07-security-considerations.md)
 - 8\. 原生应用
 - 9\. 浏览器应用
 - 10\. 与 OAuth 2.0 的区别

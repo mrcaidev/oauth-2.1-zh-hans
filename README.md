@@ -37,7 +37,7 @@
 - [9. 浏览器应用](docs/09-browser-based-apps.md)
 - [10. 与 OAuth 2.0 的区别](docs/10-differences-from-oauth-2-0.md)
 - [11. IANA 考量](docs/11-iana-considerations.md)
-- 12\. 参考文献
+- [12. 参考文献](docs/12-references.md)
 - A. 增强巴科斯范式语法
 - B. 使用 application/x-www-form-urlencoded 媒体类型
 - C. 扩展

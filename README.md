@@ -38,7 +38,7 @@
 - [10. 与 OAuth 2.0 的区别](docs/10-differences-from-oauth-2-0.md)
 - [11. IANA 考量](docs/11-iana-considerations.md)
 - [12. 参考文献](docs/12-references.md)
-- [A. 扩充巴科斯范式（ABNF）语法](docs/appendix-a-augmented-backus-naur-form-syntax.md)
+- [A. 扩充巴科斯范式（ABNF）语法](docs/appendix-a.md)
 - B. 使用 application/x-www-form-urlencoded 媒体类型
 - C. 扩展
 - D. 致谢

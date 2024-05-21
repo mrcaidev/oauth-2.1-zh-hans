@@ -34,7 +34,7 @@
 - [6. 扩展性能](docs/06-extensibility.md)
 - [7. 安全考量](docs/07-security-considerations.md)
 - [8. 原生应用](docs/08-native-applications.md)
-- 9\. 浏览器应用
+- [9. 浏览器应用](docs/09-browser-based-apps.md)
 - 10\. 与 OAuth 2.0 的区别
 - 11\. IANA 考量
 - 12\. 参考文献

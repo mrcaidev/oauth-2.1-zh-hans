@@ -40,7 +40,7 @@
 - [12. 参考文献](docs/12-references.md)
 - [A. 扩充巴科斯范式（ABNF）语法](docs/appendix-a.md)
 - [B. application/x-www-form-urlencoded 媒体类型的用法](docs/appendix-b.md)
-- C. 扩展
+- [C. 扩展](docs/appendix-c.md)
 - D. 致谢
 - E. 文档历史
 - 作者地址

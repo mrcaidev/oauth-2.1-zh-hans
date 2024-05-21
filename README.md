@@ -35,7 +35,7 @@
 - [7. 安全考量](docs/07-security-considerations.md)
 - [8. 原生应用](docs/08-native-applications.md)
 - [9. 浏览器应用](docs/09-browser-based-apps.md)
-- 10\. 与 OAuth 2.0 的区别
+- [10. 与 OAuth 2.0 的区别](docs/10-differences-from-oauth-2-0.md)
 - 11\. IANA 考量
 - 12\. 参考文献
 - A. 增强巴科斯范式语法

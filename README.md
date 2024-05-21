@@ -39,7 +39,7 @@
 - [11. IANA 考量](docs/11-iana-considerations.md)
 - [12. 参考文献](docs/12-references.md)
 - [A. 扩充巴科斯范式（ABNF）语法](docs/appendix-a.md)
-- B. 使用 application/x-www-form-urlencoded 媒体类型
+- [B. application/x-www-form-urlencoded 媒体类型的用法](docs/appendix-b.md)
 - C. 扩展
 - D. 致谢
 - E. 文档历史

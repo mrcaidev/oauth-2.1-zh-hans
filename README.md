@@ -43,7 +43,7 @@
 - [C. 扩展](docs/appendix-c.md)
 - [D. 致谢](docs/appendix-d.md)
 - E. 文档历史
-- 作者地址
+- [作者地址](docs/authors-addresses.md)
 
 ## 🤝 贡献
 

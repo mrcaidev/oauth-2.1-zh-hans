@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.0.11",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5",
     "vitepress": "^1.2.2"

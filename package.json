@@ -1,0 +1,15 @@
+{
+  "name": "oauth-2.1-zh-cn",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "vitepress": "^1.2.2"
+  }
+}

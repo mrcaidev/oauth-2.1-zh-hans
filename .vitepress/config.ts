@@ -182,7 +182,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "6. 扩展性",
+        text: "6. 可扩展性",
         base: "/extensibility",
         collapsed: true,
         items: [
@@ -266,7 +266,7 @@ export default defineConfig({
             link: "/open-redirection",
           },
           {
-            text: "7.13. 减轻授权服务器混淆攻击",
+            text: "7.13. 减少授权服务器混淆攻击",
             link: "/authorization-server-mix-up-mitigation",
           },
         ],
@@ -392,6 +392,7 @@ export default defineConfig({
     ],
     outline: {
       label: "页面导航",
+      level: [2, 3],
     },
     socialLinks: [
       {
@@ -399,21 +400,22 @@ export default defineConfig({
         link: "https://github.com/mrcaidev/oauth-2.1-zh-hans",
       },
     ],
+    footer: {
+      message:
+        '本站使用 <a href="https://vitepress.dev" target="_blank" rel="noreferrer">Vitepress</a> 构建',
+      copyright:
+        "原文 © 2024 IETF 信托基金和文档作者个人<br/>译文 © 2024 蔡与望",
+    },
     editLink: {
       pattern:
         "https://github.com/mrcaidev/oauth-2.1-zh-hans/edit/master/src/:path",
       text: "在 GitHub 上编辑此页面",
     },
-    footer: {
-      message:
-        '本站使用 <a href="https://vitepress.dev" target="_blank" rel="noreferrer">Vitepress</a> 构建',
-      copyright: "原文 © 2024 IETF 信托和文档作者个人<br/>译文 © 2024 蔡与望",
-    },
     lastUpdated: {
       text: "最后更新于",
       formatOptions: {
         dateStyle: "short",
-        timeStyle: "medium",
+        timeStyle: "short",
       },
     },
     docFooter: {

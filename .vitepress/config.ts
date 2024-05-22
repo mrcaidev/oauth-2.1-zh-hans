@@ -62,12 +62,12 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/mrcaidev/oauth-2.1-zh-cn",
+        link: "https://github.com/mrcaidev/oauth-2.1-zh-hans",
       },
     ],
     editLink: {
       pattern:
-        "https://github.com/mrcaidev/oauth-2.1-zh-cn/edit/master/src/:path",
+        "https://github.com/mrcaidev/oauth-2.1-zh-hans/edit/master/src/:path",
       text: "在 GitHub 上编辑此页面",
     },
     footer: {

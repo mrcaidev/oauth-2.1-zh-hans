@@ -1,10 +1,10 @@
 <div align="center">
-  <a href="https://github.com/mrcaidev/oauth-2.1-zh-cn">
+  <a href="https://github.com/mrcaidev/oauth-2.1-zh-hans">
     <img src="assets/oauth.svg" alt="OAuth logo" width="100"/>
   </a>
-  <h1>OAuth 2.1 zh-CN</h1>
+  <h1>OAuth 2.1 简体中文</h1>
   <p>OAuth 2.1 授权框架的简体中文翻译</p>
-  <a href="https://github.com/mrcaidev/oauth-2.1-zh-cn/blob/master/docs/01-introduction.md">
+  <a href="https://github.com/mrcaidev/oauth-2.1-zh-hans/blob/master/docs/01-introduction.md">
     📖 开始阅读
   </a>
   |
@@ -46,9 +46,9 @@
 
 ## 🤝 贡献
 
-如果您对翻译文档有疑问或建议，欢迎[提交 Issue](https://github.com/mrcaidev/oauth-2.1-zh-cn/issues)。
+如果您对翻译文档有疑问或建议，欢迎[提交 Issue](https://github.com/mrcaidev/oauth-2.1-zh-hans/issues)。
 
-如果您希望参与翻译工作，或者对某一部分翻译进行修改，欢迎[提交 Pull Request](https://github.com/mrcaidev/oauth-2.1-zh-cn/pulls)。
+如果您希望参与翻译工作，或者对某一部分翻译进行修改，欢迎[提交 Pull Request](https://github.com/mrcaidev/oauth-2.1-zh-hans/pulls)。
 
 ## ⚖️ 声明
 

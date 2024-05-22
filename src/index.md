@@ -17,7 +17,7 @@ hero:
       link: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11
     - theme: alt
       text: GitHub
-      link: https://github.com/mrcaidev/oauth-2.1-zh-cn
+      link: https://github.com/mrcaidev/oauth-2.1-zh-hans
 
 features:
   - icon: ✏️

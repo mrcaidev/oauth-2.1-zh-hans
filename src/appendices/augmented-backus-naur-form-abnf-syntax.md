@@ -14,7 +14,7 @@ NQSCHAR    = %x20-21 / %x23-5B / %x5D-7E
 
 ## A.1. “client_id”语法
 
-第 2.4.1 节定义了元素“client_id”：
+[第 2.4.1 节](/client-registration/client-authentication#_2-4-1-客户端密钥)定义了元素“client_id”：
 
 ```
 client-id     = *VSCHAR
@@ -22,7 +22,7 @@ client-id     = *VSCHAR
 
 ## A.2. “client_secret”语法
 
-第 2.4.1 节定义了元素“client_secret”：
+[第 2.4.1 节](/client-registration/client-authentication#_2-4-1-客户端密钥)定义了元素“client_secret”：
 
 ```
 client-secret = *VSCHAR
@@ -30,7 +30,7 @@ client-secret = *VSCHAR
 
 ## A.3. “response_type”语法
 
-第 4.1.1 节和第 6.4 节定义了元素“response_type”：
+[第 4.1.1 节](/grant-types/authorization-code-grant#_4-1-1-授权请求)和[第 6.4 节](/extensibility/defining-new-authorization-endpoint-response-types)定义了元素“response_type”：
 
 ```
 response-type = response-name *( SP response-name )
@@ -40,7 +40,7 @@ response-char = "_" / DIGIT / ALPHA
 
 ## A.4. “scope”语法
 
-第 1.4.1 节定义了元素“scope”：
+[第 1.4.1 节](/introduction/access-token#_1-4-1-访问令牌的范围)定义了元素“scope”：
 
 ```
  scope       = scope-token *( SP scope-token )
@@ -49,7 +49,7 @@ response-char = "_" / DIGIT / ALPHA
 
 ## A.5. “state”语法
 
-第 4.1.1 节、第 4.1.2 节和第 4.1.2.1 节定义了元素“state”：
+[第 4.1.1 节](/grant-types/authorization-code-grant#_4-1-1-授权请求)、[第 4.1.2 节](/grant-types/authorization-code-grant#_4-1-2-授权响应)和[第 4.1.2.1 节](/grant-types/authorization-code-grant#_4-1-2-1-错误响应)定义了元素“state”：
 
 ```
  state      = 1*VSCHAR
@@ -57,7 +57,7 @@ response-char = "_" / DIGIT / ALPHA
 
 ## A.6. “redirect_uri”语法
 
-第 4.1.1 节和第 4.1.3 节定义了元素“redirect_uri”：
+[第 4.1.1 节](/grant-types/authorization-code-grant#_4-1-1-授权请求)和[第 4.1.3 节](/grant-types/authorization-code-grant#_4-1-3-令牌端点扩展)定义了元素“redirect_uri”：
 
 ```
  redirect-uri      = URI-reference
@@ -65,7 +65,7 @@ response-char = "_" / DIGIT / ALPHA
 
 ## A.7. “error”语法
 
-第 4.1.2.1 节、第 3.2.4 节、第 7.2 节和第 8.5 节定义了元素“error”：
+[第 4.1.2.1 节](/grant-types/authorization-code-grant#_4-1-2-1-错误响应)、[第 3.2.4 节](/protocol-endpoints/token-endpoint#_3-2-4-错误响应)、[第 7.2 节](/security-considerations/client-authentication)和[第 8.5 节](/native-applications/security-considerations-in-native-apps)定义了元素“error”：
 
 ```
  error             = 1*NQSCHAR
@@ -73,7 +73,7 @@ response-char = "_" / DIGIT / ALPHA
 
 ## A.8. “error_description”语法
 
-第 4.1.2.1 节、第 3.2.4 节和第 5.3 节定义了元素“error_description”：
+[第 4.1.2.1 节](/grant-types/authorization-code-grant#_4-1-2-1-错误响应)、[第 3.2.4 节](/protocol-endpoints/token-endpoint#_3-2-4-错误响应)和[第 5.3 节](/resource-requests/error-response)定义了元素“error_description”：
 
 ```
  error-description = 1*NQSCHAR
@@ -81,7 +81,7 @@ response-char = "_" / DIGIT / ALPHA
 
 ## A.9. “error_uri”语法
 
-第 4.1.2.1 节、第 3.2.4 节和第 7.2 节定义了元素“error_uri”：
+[第 4.1.2.1 节](/grant-types/authorization-code-grant#_4-1-2-1-错误响应)、[第 3.2.4 节](/protocol-endpoints/token-endpoint#_3-2-4-错误响应)和[第 7.2 节](/security-considerations/client-authentication)定义了元素“error_uri”：
 
 ```
 error-uri         = URI-reference
@@ -89,7 +89,7 @@ error-uri         = URI-reference
 
 ## A.10. “grant_type”语法
 
-第 3.2.2 节定义了元素“grant_type”：
+[第 3.2.2 节](/protocol-endpoints/token-endpoint#_3-2-2-令牌请求)定义了元素“grant_type”：
 
 ```
 grant-type = grant-name / URI-reference
@@ -99,7 +99,7 @@ name-char  = "-" / "." / "_" / DIGIT / ALPHA
 
 ## A.11. “code”语法
 
-第 4.1.3 节定义了元素“code”：
+[第 4.1.3 节](/grant-types/authorization-code-grant#_4-1-3-令牌端点扩展)定义了元素“code”：
 
 ```
 code       = 1*VSCHAR
@@ -107,7 +107,7 @@ code       = 1*VSCHAR
 
 ## A.12. “access_token”语法
 
-第 3.2.3 节定义了元素“access_token”：
+[第 3.2.3 节](/protocol-endpoints/token-endpoint#_3-2-3-令牌响应)定义了元素“access_token”：
 
 ```
 access-token = 1*VSCHAR
@@ -115,7 +115,7 @@ access-token = 1*VSCHAR
 
 ## A.13. “token_type”语法
 
-第 3.2.3 节和第 6.1 节定义了元素“token_type”：
+[第 3.2.3 节](/protocol-endpoints/token-endpoint#_3-2-3-令牌响应)和[第 6.1 节](/extensibility/defining-access-token-types)定义了元素“token_type”：
 
 ```
 token-type = type-name / URI-reference
@@ -125,7 +125,7 @@ name-char  = "-" / "." / "_" / DIGIT / ALPHA
 
 ## A.14. “expires_in”语法
 
-第 3.2.3 节定义了元素“expires_in”：
+[第 3.2.3 节](/protocol-endpoints/token-endpoint#_3-2-3-令牌响应)定义了元素“expires_in”：
 
 ```
 expires-in = 1*DIGIT
@@ -133,7 +133,7 @@ expires-in = 1*DIGIT
 
 ## A.15. “refresh_token”语法
 
-第 3.2.3 节和第 4.3 节定义了元素“refresh_token”：
+[第 3.2.3 节](/protocol-endpoints/token-endpoint#_3-2-3-令牌响应)和[第 4.3 节](/grant-types/refresh-token-grant)定义了元素“refresh_token”：
 
 ```
 refresh-token = 1*VSCHAR
@@ -141,7 +141,7 @@ refresh-token = 1*VSCHAR
 
 ## A.16. 端点参数语法
 
-第 6.2 节定义了新的端点参数的语法：
+[第 6.2 节](/extensibility/defining-new-endpoint-parameters)定义了新的端点参数的语法：
 
 ```
 param-name = 1*name-char

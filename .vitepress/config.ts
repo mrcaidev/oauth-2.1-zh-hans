@@ -210,7 +210,7 @@ export default defineConfig({
             link: "/defining-new-authorization-endpoint-response-types",
           },
           {
-            text: "6.5. 定义额外的错误代码",
+            text: "6.5. 定义新的错误代码",
             link: "/defining-additional-error-codes",
           },
         ],

@@ -1,6 +1,6 @@
 # 附录 A. 扩充巴科斯范式（ABNF）语法
 
-该节使用 [[RFC5234](https://www.rfc-editor.org/info/rfc5234)]，为该规范定义的各元素提供了扩充巴科斯范式（ABNF）语法的描述。下面的 ABNF 使用 Unicode 码位 [[W3C.REC-xml-20081126](https://www.w3.org/TR/REC-xml/REC-xml-20081126.xml)] 定义。这些字符通常使用 UTF-8 编码。各元素根据定义顺序进行展示。
+本节使用 [[RFC5234](https://www.rfc-editor.org/info/rfc5234)]，为本规范定义的各元素提供了扩充巴科斯范式（ABNF）语法的描述。下面的 ABNF 使用 Unicode 码位 [[W3C.REC-xml-20081126](https://www.w3.org/TR/REC-xml/REC-xml-20081126.xml)] 定义。这些字符通常使用 UTF-8 编码。各元素根据定义顺序进行展示。
 
 下面的某些定义使用了 [[RFC3986](https://www.rfc-editor.org/info/rfc3986)] 中的“URI-reference”定义。
 

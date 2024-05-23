@@ -10,7 +10,7 @@
 
 授权服务器**必须**忽略发送到令牌端点的未识别的请求参数。
 
-**禁止**重复包含该规范定义的请求和响应参数。没有值的参数**必须**被视为从请求中省略。
+**禁止**重复包含本规范定义的请求和响应参数。没有值的参数**必须**被视为从请求中省略。
 
 希望支持浏览器应用（仅在客户端 JavaScript 中运行、不访问后端服务器的应用程序）的授权服务器需要确保令牌端点支持必要的 CORS（[[WHATWG.CORS](https://fetch.spec.whatwg.org/#http-cors-protocol)]）头，以允许应用程序看到响应。如果授权服务器向应用程序提供了其它端点，例如元数据 URL、动态客户端注册、撤销、检查、发现或用户信息端点，那么这些端点也可以被浏览器应用访问，并且还需要定义 CORS 头以允许访问。详见 [[I-D.ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-15)]。
 
@@ -32,7 +32,7 @@
 
 **"client_id"：** 如果客户端未与授权服务器进行认证（如 3.2.1 节所述），则此参数是**必需**的。
 
-**"grant_type"：** **必需**。客户端在该次令牌请求中使用的授权许可类型标识符。该规范定义的值有 authorization_code、refresh_token 和 client_credentials。授权许可类型决定了令牌请求所需的或支持的进一步参数。关于这些授权许可类型的详细信息在下面定义。
+**"grant_type"：** **必需**。客户端在该次令牌请求中使用的授权许可类型标识符。本规范定义的值有 authorization_code、refresh_token 和 client_credentials。授权许可类型决定了令牌请求所需的或支持的进一步参数。关于这些授权许可类型的详细信息在下面定义。
 
 机密客户端**必须**与授权服务器进行认证，如第 3.2.1 节所述。
 

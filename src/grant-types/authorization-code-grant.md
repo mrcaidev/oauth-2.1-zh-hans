@@ -164,7 +164,7 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
 
 授权服务器**必须**将 code_challenge 和 code_challenge_method 的值与颁发的授权码关联起来，以便稍后可以验证代码质询。
 
-服务器用来关联 code_challenge 和颁发的授权码的确切方法超出了本规范的范围。代码质询可以被存储在服务器上，并与授权码关联。code_challenge 和 code_challenge_method 的值可以以加密形式存储在授权码本身中，但服务器**禁止**以除授权服务器外的其它实体可以提取的形式，在响应参数中包含 code_challenge 的值。
+服务器用来关联 code_challenge 和颁发的授权码的确切方法不在本规范的范围内。代码质询可以被存储在服务器上，并与授权码关联。code_challenge 和 code_challenge_method 的值可以以加密形式存储在授权码本身中，但服务器**禁止**以除授权服务器外的其它实体可以提取的形式，在响应参数中包含 code_challenge 的值。
 
 客户端**必须**防止攻击者将授权码注入（重播）到授权响应中。使用 code_challenge 和 code_verifier 可以防止授权码注入，因为授权服务器会拒绝 code_verifier 不匹配的令牌请求。详见第 7.5.1 节。
 

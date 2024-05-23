@@ -19,6 +19,6 @@ OAuth 通过分离客户端与资源所有者的角色，为客户端-服务器�
 
 OAuth 是授权协议，而非认证协议。访问令牌代表了授予客户端的授权。一种常见的做法是，客户端向专门的 API 提供访问令牌，API 返回资源所有者的用户标识符，然后客户端再将 API 返回的结果作为认证的代理。这种做法不属于 OAuth 的标准或安全考量，资源所有者也未必考虑过这种做法。在采取这种做法前，实现者应该仔细查阅资源服务器的文档。
 
-本规范被设计为与 HTTP（[[RFC9110](https://www.rfc-editor.org/info/rfc9110)]）一起使用。在除 HTTP 以外的协议上使用 OAuth 超出了本规范的范围。
+本规范被设计为与 HTTP（[[RFC9110](https://www.rfc-editor.org/info/rfc9110)]）一起使用。在除 HTTP 以外的协议上使用 OAuth 不在本规范的范围内。
 
 自 2012 年 10 月 OAuth 2.0 授权框架（[[RFC6749](https://www.rfc-editor.org/info/rfc6749)]）发布以来，它被这些文档所更新：用于原生应用的 OAuth 2.0（[[RFC8252](https://www.rfc-editor.org/info/rfc8252)]）、OAuth 安全当前最佳实践（[[I-D.ietf-oauth-security-topics](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-24)]）以及用于浏览器应用的 OAuth 2.0（[[I-D.ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-15)]）。OAuth 2.0 授权框架：不记名令牌使用（[[RFC6750](https://www.rfc-editor.org/info/rfc6750)]）也被（[[I-D.ietf-oauth-security-topics](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-24)]）所更新。本规范结合了上述所有文档的信息，并且移除了（[[I-D.ietf-oauth-security-topics](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-24)]）中已被发现不安全的功能。

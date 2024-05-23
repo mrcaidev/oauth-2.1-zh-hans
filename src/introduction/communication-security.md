@@ -6,4 +6,4 @@ OAuth 的 URL **必须**使用 https 协议，除了回环接口重定向 URI **
 
 本规范的实现也**可以**支持满足其安全要求的其他传输层安全机制。
 
-TLS 版本和算法的辨识超出了本规范的范围。关于传输层安全的最新建议见 [[BCP195](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-10#BCP195)]。证书验证和其他安全考量见相关规范。
+TLS 版本和算法的辨识不在本规范的范围内。关于传输层安全的最新建议见 [[BCP195](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-10#BCP195)]。证书验证和其他安全考量见相关规范。

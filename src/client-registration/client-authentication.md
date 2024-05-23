@@ -4,7 +4,7 @@
 
 如果客户端是机密的，授权服务器**可以**接受满足其安全要求（例如密码、公钥/私钥对）的任何形式的客户端认证。
 
-**推荐**使用非对称（基于公钥）的客户端认证方法，例如 mTLS [[RFC8705](https://www.rfc-editor.org/info/rfc8705)] 或符合 [[RFC7521](https://www.rfc-editor.org/info/rfc7521)] 和 [[RFC7523](https://www.rfc-editor.org/info/rfc7523)] 要求的、使用签名的 JWT（"私钥 JWT"）（在 [[OpenID](https://openid.net/specs/openid-connect-core-1_0.html)] 中被定义为客户端认证方法 private_key_jwt）。当使用这些客户端认证方法时，授权服务器不需要存储敏感的对称密钥，使得这些方法对许多攻击更加健壮。
+**建议**使用非对称（基于公钥）的客户端认证方法，例如 mTLS [[RFC8705](https://www.rfc-editor.org/info/rfc8705)] 或符合 [[RFC7521](https://www.rfc-editor.org/info/rfc7521)] 和 [[RFC7523](https://www.rfc-editor.org/info/rfc7523)] 要求的、使用签名的 JWT（"私钥 JWT"）（在 [[OpenID](https://openid.net/specs/openid-connect-core-1_0.html)] 中被定义为客户端认证方法 private_key_jwt）。当使用这些客户端认证方法时，授权服务器不需要存储敏感的对称密钥，使得这些方法对许多攻击更加健壮。
 
 当无法进行客户端认证时，授权服务器**应该**采用其他方法来验证客户端的身份——例如要求客户端注册重定向 URI ，或者询问资源所有者来确认身份。仅仅拥有有效的重定向 URI 不足以在请求资源所有者授权时验证客户端的身份，但可以在获得资源所有者的授权后，用于防止将凭证交付给伪造的客户端。
 
@@ -49,7 +49,7 @@ Authorization: Basic czZCaGRSa3F0Mzo3RmpmcDBaQnIxS3REUmJuZlZkbUl3
 
 除此之外，授权服务器**可以**支持在请求内容中包含客户端凭证，使用以下参数：
 
-在请求内容中使用这两个参数来包含客户端凭证是**不推荐**的，并且**应该**被限制在无法直接使用 HTTP 基本认证方案（或其他基于密码的 HTTP 认证方案）的客户端上。
+在请求内容中使用这两个参数来包含客户端凭证是**不建议**的，并且**应该**被限制在无法直接使用 HTTP 基本认证方案（或其他基于密码的 HTTP 认证方案）的客户端上。
 
 由于客户端密钥认证方法涉及密码，授权服务器**必须**保护使用这种方法的任何端点免受暴力破解攻击。
 

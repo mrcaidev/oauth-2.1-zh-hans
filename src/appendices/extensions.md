@@ -8,7 +8,7 @@
 
 **[[RFC8628](https://www.rfc-editor.org/info/rfc8628)]：OAuth 2.0 设备授权许可**
 
-设备授权许可（原称为设备流程）是一项扩展，让没有浏览器或输入能力有限的设备也能获取访问令牌。这通常用于智能电视应用，或者像硬件视频编码器一样，可以将视频流式传输到流媒体视频服务的设备。
+设备授权许可（原称为设备流程）是一项扩展，让没有浏览器或输入能力有限的设备也能够获取访问令牌。这通常用于智能电视应用，或者像硬件视频编码器一样，可以将视频流式传输到流媒体视频服务的设备。
 
 **[[RFC8414](https://www.rfc-editor.org/info/rfc8414)]：授权服务器元数据**
 
@@ -42,12 +42,10 @@ DPoP 描述了一种机制，将令牌绑定到其被颁发给的客户端，并
 
 授权请求推送描述了一种技术，可以从后端通道启动 OAuth 流程，提供更高的安全性和更强的灵活性，用于构建复杂的授权请求。
 
-**[[RFC9207](https://www.rfc-editor.org/info/rfc9207)]：授权服务器颁发者身份**
+**[[RFC9207](https://www.rfc-editor.org/info/rfc9207)]：授权服务器的颁发者身份**
 
 授权响应中的 iss 参数表示了授权服务器的身份，以防止客户端处的混淆攻击。
 
 **[[RFC9396](https://www.rfc-editor.org/info/rfc9396)]：富授权请求**
-
-Rich Authorization Requests specifies a new parameter authorization_details that is used to carry fine-grained authorization data in the OAuth authorization request.
 
 富授权请求规定了一个新参数 authorization_details，用于在 OAuth 授权请求中携带细粒度的授权数据。

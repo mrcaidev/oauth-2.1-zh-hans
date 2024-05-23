@@ -12,7 +12,7 @@
 
 **禁止**重复包含本规范定义的请求和响应参数。没有值的参数**必须**被视为从请求中省略。
 
-希望支持浏览器应用（仅在客户端 JavaScript 中运行、不访问后端服务器的应用程序）的授权服务器需要确保令牌端点支持必要的 CORS（[[WHATWG.CORS](https://fetch.spec.whatwg.org/#http-cors-protocol)]）头，以允许应用程序看到响应。如果授权服务器向应用程序提供了其它端点，例如元数据 URL、动态客户端注册、撤销、检查、发现或用户信息端点，那么这些端点也可以被浏览器应用访问，并且还需要定义 CORS 头以允许访问。详见 [[I-D.ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-15)]。
+希望支持浏览器应用（仅在客户端 JavaScript 中运行、不访问后端服务器的应用）的授权服务器需要确保令牌端点支持必要的 CORS（[[WHATWG.CORS](https://fetch.spec.whatwg.org/#http-cors-protocol)]）头，以允许应用看到响应。如果授权服务器向应用提供了其它端点，例如元数据 URL、动态客户端注册、撤销、检查、发现或用户信息端点，那么这些端点也可以被浏览器应用访问，并且还需要定义 CORS 头以允许访问。详见 [[I-D.ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-15)]。
 
 ## 3.2.1. 客户端认证
 
@@ -68,9 +68,9 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 **"token_type"：** **必需**。颁发的访问令牌的类型，如第 1.4 节所述。值不区分大小写。
 
-**"expires_in"：** **推荐**。访问令牌的生命周期，形式为 JSON 数字，以秒为单位。例如，值 3600 表示访问令牌将在响应生成一小时后过期。如果省略，那么授权服务器**应该**通过其他方式提供过期时间，或者在文档中记录默认值。
+**"expires_in"：** **建议**。访问令牌的生命周期，形式为 JSON 数字，以秒为单位。例如，值 3600 表示访问令牌将在响应生成一小时后过期。如果省略，那么授权服务器**应该**通过其他方式提供过期时间，或者在文档中记录默认值。
 
-**"scope"：** 如果与客户端请求的范围相同，那么就是**推荐**的，否则是**必需**的。访问令牌的范围如第 1.4.1 节所述。
+**"scope"：** 如果与客户端请求的范围相同，那么就是**建议**的，否则是**必需**的。访问令牌的范围如第 1.4.1 节所述。
 
 **"refresh_token"：** **可选**。刷新令牌，可用于根据相应的令牌请求中传递的授权许可，来获取新的访问令牌。
 

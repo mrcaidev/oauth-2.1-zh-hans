@@ -24,7 +24,7 @@
 
 例如，客户端可能只需要对用户资源的“读取”访问权限，而不需要更新资源。因此，客户端可以请求由授权服务器定义的只读范围，然后获取一个无法用于更新资源的访问令牌。这需要授权服务器、资源服务器和客户端三者的协调。授权服务器提供给客户端请求特定范围的能力，并将这些范围与颁发给客户端的访问令牌关联起来。然后，在面对有限范围的访问令牌时，资源服务器负责执行这些范围限制。
 
-范围的值不由 OAuth 定义，而是由授权服务器，或者 OAuth 扩展或配置文件定义。[[OpenID](https://openid.net/specs/openid-connect-core-1_0.html)] 就是其中一个定义范围的扩展。它定义了一系列范围，提供了对用户资料的细粒度访问权限。推荐避免定义与已知扩展中的范围冲突的自定义范围。
+范围的值不由 OAuth 定义，而是由授权服务器，或者 OAuth 扩展或配置文件定义。[[OpenID](https://openid.net/specs/openid-connect-core-1_0.html)] 就是其中一个定义范围的扩展。它定义了一系列范围，提供了对用户资料的细粒度访问权限。建议避免定义与已知扩展中的范围冲突的自定义范围。
 
 为了请求有限范围的访问令牌，客户端根据使用的授权类型，在授权或令牌端点使用范围请求参数。授权服务器则使用范围响应参数，来告知客户端颁发的访问令牌的范围。
 
@@ -55,4 +55,4 @@ Bearer 令牌没有特定的结构要求或格式要求。如果 Bearer 令牌�
 
 授权服务器和资源服务器**应该**使用发送者约束的访问令牌的机制，例如 OAuth 持有证明展示（DPoP）[[RFC9449](https://www.rfc-editor.org/info/rfc9449)] 或 OAuth 2.0 的双向 TLS（mTLS）[[RFC8705](https://www.rfc-editor.org/info/rfc8705)]。请参考 [[I-D.ietf-oauth-security-topics](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-24)] 的第 4.10.1 节，以防止被盗和泄露的访问令牌的滥用。
 
-**推荐**在客户端和资源服务器之间使用端到端的 TLS。如果需要在中间代理处终止 TLS流量，请参考 [[I-D.ietf-oauth-security-topics](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-24)] 的第 4.13 节获取更多安全建议。
+**建议**在客户端和资源服务器之间使用端到端的 TLS。如果需要在中间代理处终止 TLS流量，请参考 [[I-D.ietf-oauth-security-topics](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-24)] 的第 4.13 节获取更多安全建议。

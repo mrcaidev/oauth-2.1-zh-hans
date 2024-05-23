@@ -62,4 +62,4 @@ Content-Type: application/x-www-form-urlencoded
 access_token=mF_9.B5f-4.1JqM
 ```
 
-application/x-www-form-urlencoded 方法**不应该**被使用，除非在应用程序的环境中，参与的客户端无法访问 Authorization 请求头字段。资源服务器**可以**支持这种方法。
+application/x-www-form-urlencoded 方法**不应该**被使用，除非在应用的环境中，参与的客户端无法访问 Authorization 请求头字段。资源服务器**可以**支持这种方法。

@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div align="center">
   <img src="src/public/oauth.svg" alt="OAuth logo" width="100" height="100" />
   <h1>OAuth 2.1 简体中文</h1>
   <p>OAuth 2.1 规范的简体中文翻译</p>

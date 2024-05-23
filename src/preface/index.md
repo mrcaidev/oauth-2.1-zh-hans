@@ -8,22 +8,22 @@ OAuth 2.1 授权框架使得一款应用能够获取受保护资源的有限访�
 
 该注释将在发布为 RFC 前被移除。
 
-关于该文档的讨论在 OAuth 工作组的邮件列表（oauth@ietf.org）上进行，并归档于 https://mailarchive.ietf.org/arch/browse/oauth/ 。
+关于本文档的讨论在 OAuth 工作组的邮件列表（oauth@ietf.org）上进行，并归档于 https://mailarchive.ietf.org/arch/browse/oauth/ 。
 
-该草案的源文件和问题追踪请见 https://github.com/oauth-wg/oauth-v2-1 。
+本草案的源文件和问题追踪请见 https://github.com/oauth-wg/oauth-v2-1 。
 
 ## 文档状态
 
-该互联网草案完全符合 BCP 78 和 BCP 79 的规定。
+本互联网草案完全符合 BCP 78 和 BCP 79 的规定。
 
 互联网草案是互联网工程任务组（IETF）的工作文件。请注意，其它组织也可能将工作文件作为互联网草案进行分发。现有的互联网草案列表请见 https://datatracker.ietf.org/drafts/current/ 。
 
 互联网草案是草稿文档，有效期最长为六个月，并且随时可能被其它文档更新、取缔或废弃。互联网草案不宜作为参考文献或引用，除非将其标注为“半成品”。
 
-该互联网草案将在 2024 年 11 月 16 日过期。
+本互联网草案将在 2024 年 11 月 16 日过期。
 
 ## 版权声明
 
 版权所有 (c) 2024 IETF 基金以及被标识为文档作者的个人。保留所有权利。
 
-该文档受 BCP 78 和 IETF 信托基金关于 IETF 文档的法律条款（https://trustee.ietf.org/license-info/ ）的约束，自该文档发布当日起生效。请仔细查阅这些文档，因为它们描述了您与该文档相关的权利和限制。从该文档中提取的代码部分必须如信托基金法律条款的第 4.e 节所述，包含修改版 BSD 许可证文本；并且如修改版 BSD 许可证所述，不提供质量保障。
+本文档受 BCP 78 和 IETF 信托基金关于 IETF 文档的法律条款（https://trustee.ietf.org/license-info/ ）的约束，自本文档发布当日起生效。请仔细查阅这些文档，因为它们描述了您与本文档相关的权利和限制。从本文档中提取的代码部分必须如信托基金法律条款的第 4.e 节所述，包含修改版 BSD 许可证文本；并且如修改版 BSD 许可证所述，不提供质量保障。

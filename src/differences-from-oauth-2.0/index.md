@@ -1,6 +1,6 @@
 # 概述
 
-该草案结合了 OAuth 2.0 [[RFC6749](https://www.rfc-editor.org/info/rfc6749)]、原生应用的 OAuth 2.0（[[RFC8252](https://www.rfc-editor.org/info/rfc8252)]）、代码交换的证明密钥（[[RFC7636](https://www.rfc-editor.org/info/rfc7636)]）、浏览器应用的 OAuth 2.0（[[I-D.ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-18)]）、OAuth 安全的当前最佳实践（[[I-D.ietf-oauth-security-topics](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-27)]），以及不记名令牌用法（[[RFC6750](https://www.rfc-editor.org/info/rfc6750)]）。
+本草案结合了 OAuth 2.0 [[RFC6749](https://www.rfc-editor.org/info/rfc6749)]、原生应用的 OAuth 2.0（[[RFC8252](https://www.rfc-editor.org/info/rfc8252)]）、代码交换的证明密钥（[[RFC7636](https://www.rfc-editor.org/info/rfc7636)]）、浏览器应用的 OAuth 2.0（[[I-D.ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-18)]）、OAuth 安全的当前最佳实践（[[I-D.ietf-oauth-security-topics](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-27)]），以及不记名令牌用法（[[RFC6750](https://www.rfc-editor.org/info/rfc6750)]）。
 
 如果新稿更新或废弃了原稿 [[RFC6749](https://www.rfc-editor.org/info/rfc6749)] 中的功能，该稿中的对应功能也会根据如新稿所述的规范更改，进行更新或彻底移除。
 

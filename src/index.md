@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: OAuth 2.1 简体中文
-  text: 第 11 版草稿的简体中文翻译
+  text: 第 11 版草案的简体中文翻译
   tagline: 帮助中文开发者查阅或学习 OAuth 2.1 授权框架
   image:
     src: /oauth.svg

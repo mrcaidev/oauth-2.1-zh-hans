@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "OAuth 2.1 简体中文",
-  description: "第 11 版草稿的简体中文翻译",
+  description: "第 11 版草案的简体中文翻译",
   head: [
     [
       "link",

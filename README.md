@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div align="center">
   <img src="src/public/oauth.svg" alt="OAuth logo" width="100" height="100" />
   <h1>OAuth 2.1 简体中文</h1>
   <p>OAuth 2.1 规范的简体中文翻译</p>
@@ -14,9 +14,9 @@
 
 > [!WARNING]
 >
-> 在编写此 README 文档时，OAuth 2.1 规范仍然处于草稿阶段。这意味着该规范——如同它在[文档状态](docs/00-frontmatter.md#文档状态)中所述——“是草稿文档，有效期最长为六个月，并且随时可能被其它文档更新、取缔或废弃”，并且“不宜作为参考文献或引用，除非将其标注为‘半成品’。”
+> OAuth 2.1 规范当前仍然处于草案阶段。这意味着该规范“是草稿文档，有效期最长为六个月，并且随时可能被其它文档更新、取缔或废弃”，并且“不宜作为参考文献或引用，除非将其标注为‘半成品’。”
 >
-> 该项目将紧密跟踪规范[最新版本](https://github.com/oauth-wg/oauth-v2-1/releases/latest)，并及时更新翻译内容，确保译文与原文始终保持内容一致。
+> 本项目将紧密跟踪规范的[最新版本](https://github.com/oauth-wg/oauth-v2-1/releases/latest)，及时更新翻译文档，确保译文与原文始终保持内容一致。
 
 ## 🤝 贡献指南
 
@@ -30,6 +30,6 @@
 
 译文 © 2024 蔡与望
 
-> 问：[我可以再发布 RFC 全文吗？](https://trustee.ietf.org/about/faq/)
+> [我可以再发布 RFC 全文吗？](https://trustee.ietf.org/about/faq/)
 >
-> 答：可以。自 RFC 系列问世以来，再发布 RFC 全文（包括翻译成英语以外的语言）一直都是被允许并鼓励的。IETF 信托基金 和 RFC 编辑对此不设任何限制。大多数 RFC 都包含了标准短语“本文档分发不受限制”，以表明这一点。
+> 可以。自 RFC 系列问世以来，再发布 RFC 全文（包括翻译成英语以外的语言）一直都是被允许并鼓励的。IETF 信托基金 和 RFC 编辑对此不设任何限制。大多数 RFC 都包含了标准短语“本文档分发不受限制”，以表明这一点。

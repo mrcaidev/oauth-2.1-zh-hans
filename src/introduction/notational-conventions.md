@@ -6,7 +6,7 @@
 >
 > 译者注：由于中文无大小写区分，该翻译版本将使用加粗文本代替大写。例如，“**必须**”对应 “MUST”，按照 BCP 14 中对 “MUST” 的描述来解释。
 
-该规范使用了 [[RFC5234](https://www.rfc-editor.org/info/rfc5234)] 中的增强巴科斯范式（ABNF）表示法。此外，URI-reference 规则来自“统一资源标识符（URI）：通用语法” [[RFC3986](https://www.rfc-editor.org/info/rfc3986)]。
+本规范使用了 [[RFC5234](https://www.rfc-editor.org/info/rfc5234)] 中的增强巴科斯范式（ABNF）表示法。此外，URI-reference 规则来自“统一资源标识符（URI）：通用语法” [[RFC3986](https://www.rfc-editor.org/info/rfc3986)]。
 
 与安全相关的术语应按 [[RFC4949](https://www.rfc-editor.org/info/rfc4949)] 中定义的意义理解。这些术语包括但不限于“攻击”、“认证”、“授权”、“证书”、“机密性”、“凭证”、“加密”、“身份”、“签名”、“信任”和“验证”。
 

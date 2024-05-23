@@ -2,24 +2,24 @@
 
 Dick Hardt
 
-Hellō
+组织：Hellō
 
-Email: dick.hardt@gmail.com
+邮箱：[dick.hardt@gmail.com](mailto:dick.hardt@gmail.com)
 
 ---
 
 Aaron Parecki
 
-Okta
+组织：Okta
 
-Email: aaron@parecki.com
+邮箱：[aaron@parecki.com](mailto:aaron@parecki.com)
 
-URI: https://aaronparecki.com
+URI：https://aaronparecki.com
 
 ---
 
 Torsten Lodderstedt
 
-yes.com
+组织：yes.com
 
-Email: torsten@lodderstedt.net
+邮箱：[torsten@lodderstedt.net](mailto:torsten@lodderstedt.net)

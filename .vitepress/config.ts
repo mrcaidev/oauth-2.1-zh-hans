@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "OAuth 2.1 简体中文",
-  description: "第 11 版草稿的简体中文翻译",
+  description: "第 11 版草案的简体中文翻译",
   head: [
     [
       "link",
@@ -32,7 +32,14 @@ export default defineConfig({
     sidebar: [
       {
         text: "序言",
-        link: "/preface",
+        base: "/preface",
+        collapsed: true,
+        items: [
+          {
+            text: "序言",
+            link: "/",
+          },
+        ],
       },
       {
         text: "1. 简介",
@@ -203,7 +210,7 @@ export default defineConfig({
             link: "/defining-new-authorization-endpoint-response-types",
           },
           {
-            text: "6.5. 定义额外的错误代码",
+            text: "6.5. 定义新的错误代码",
             link: "/defining-additional-error-codes",
           },
         ],
@@ -242,7 +249,7 @@ export default defineConfig({
             link: "/ensuring-endpoint-authenticity",
           },
           {
-            text: "7.7. 猜测凭据攻击",
+            text: "7.7. 凭据猜测攻击",
             link: "/credentials-guessing-attacks",
           },
           {
@@ -368,7 +375,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: "附录 A. 扩展巴科斯范式（ABNF）语法",
+            text: "附录 A. 扩充巴科斯范式（ABNF）语法",
             link: "/augmented-backus-naur-form-abnf-syntax",
           },
           {

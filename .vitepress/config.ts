@@ -32,7 +32,14 @@ export default defineConfig({
     sidebar: [
       {
         text: "序言",
-        link: "/preface",
+        base: "/preface",
+        collapsed: true,
+        items: [
+          {
+            text: "序言",
+            link: "/",
+          },
+        ],
       },
       {
         text: "1. 简介",

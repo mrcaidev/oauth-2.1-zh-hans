@@ -2,7 +2,7 @@
 
 用于授权端点的新响应类型，遵循 [RFC6749] 第 11.3 节的步骤，在授权端点响应类型注册表中定义并注册。响应类型名称**必须**符合 response-type 的 ABNF。
 
-```abnf
+```
 response-type  = response-name *( SP response-name )
 response-name  = 1*response-char
 response-char  = "_" / DIGIT / ALPHA

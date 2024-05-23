@@ -82,7 +82,7 @@
 
 代码验证器的 ABNF 定义如下。
 
-```abnf
+```
 code-verifier = 43*128unreserved
 unreserved = ALPHA / DIGIT / "-" / "." / "_" / "~"
 ALPHA = %x41-5A / %x61-7A
@@ -107,7 +107,7 @@ plain
 
 代码质询的 ABNF 如下：
 
-```abnf
+```
 code-challenge = 43*128unreserved
 unreserved = ALPHA / DIGIT / "-" / "." / "_" / "~"
 ALPHA = %x41-5A / %x61-7A

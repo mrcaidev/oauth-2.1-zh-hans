@@ -16,7 +16,7 @@
 
 类型名称必须符合 type-name 的 ABNF。如果类型定义包含了一种新的 HTTP 认证方案，那么类型名称应该与（[[RFC2617](https://www.rfc-editor.org/info/rfc2617)] 定义的）HTTP 认证方案名称保持一致。令牌类型 example 保留给示例使用。
 
-```abnf
+```
 type-name  = 1*name-char
 name-char  = "-" / "." / "_" / DIGIT / ALPHA
 ```

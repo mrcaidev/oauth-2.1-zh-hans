@@ -18,7 +18,7 @@ Authorization: Bearer mF_9.B5f-4.1JqM
 
 该方案中 Authorization 请求头字段的语法遵循 [[RFC2617](https://www.rfc-editor.org/info/rfc2617)] 第 2 节定义的 Basic 方案用法。注意，如同 Basic 方案，它不符合 [[RFC2617](https://www.rfc-editor.org/info/rfc2617)] 第 1.2 节定义的通用语法，但兼容 HTTP 1.1 认证 [[RFC7235](https://www.rfc-editor.org/info/rfc7235)] 中的通用认证框架——尽管它为了反映现有的部署情况，没有遵循其中概述的首选实践。Bearer 凭据的语法如下：
 
-```abnf
+```
 token68    = 1*( ALPHA / DIGIT /
                  "-" / "." / "_" / "~" / "+" / "/" ) *"="
 credentials = "Bearer" 1*SP token68

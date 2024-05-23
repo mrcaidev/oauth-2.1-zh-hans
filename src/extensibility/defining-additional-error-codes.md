@@ -6,7 +6,7 @@
 
 错误代码**必须**符合 error 的 ABNF。如果可能，错误代码**应该**使用标识名称作为前缀。例如，表示扩展参数 example 被设置为无效值的错误**应该**被命名为 example_invalid。
 
-```abnf
+```
 error      = 1*error-char
 error-char = %x20-21 / %x23-5B / %x5D-7E
 ```

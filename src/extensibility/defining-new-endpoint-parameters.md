@@ -4,7 +4,7 @@
 
 参数名称**必须**符合 param-name 的 ABNF。参数值的语法**必须**有明确定义（例如，使用 ABNF，或者引用现有参数的语法）。
 
-```abnf
+```
 param-name  = 1*name-char
 name-char   = "-" / "." / "_" / DIGIT / ALPHA
 ```

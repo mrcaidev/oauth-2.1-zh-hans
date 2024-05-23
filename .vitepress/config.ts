@@ -249,7 +249,7 @@ export default defineConfig({
             link: "/ensuring-endpoint-authenticity",
           },
           {
-            text: "7.7. 猜测凭据攻击",
+            text: "7.7. 凭据猜测攻击",
             link: "/credentials-guessing-attacks",
           },
           {
@@ -375,7 +375,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: "附录 A. 扩展巴科斯范式（ABNF）语法",
+            text: "附录 A. 扩充巴科斯范式（ABNF）语法",
             link: "/augmented-backus-naur-form-abnf-syntax",
           },
           {

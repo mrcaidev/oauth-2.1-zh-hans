@@ -1,8 +1,9 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "OAuth 2.1 简体中文",
-  description: "第 11 版草案的简体中文翻译",
+  title: "OAuth 2.1 授权框架",
+  description:
+    "OAuth 2.1 授权框架的简体中文翻译，帮助中文开发者学习或查阅 OAuth 2.1 规范。贴合中文习惯，AI 辅助翻译，持续同步更新，社区开放协作。",
   head: [
     [
       "link",

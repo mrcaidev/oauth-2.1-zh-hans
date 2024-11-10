@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: OAuth 2.1 简体中文
-  text: 第 11 版草案的简体中文翻译
-  tagline: 帮助中文开发者查阅或学习 OAuth 2.1 授权框架
+  name: OAuth 2.1 授权框架
+  text: 简体中文翻译
+  tagline: 帮助中文开发者学习或查阅 OAuth 2.1 规范
   image:
     src: /oauth.svg
-    alt: OAuth 授权框架的标志
+    alt: OAuth 授权框架的图标
   actions:
     - theme: brand
       text: 开始阅读
@@ -21,8 +21,8 @@ hero:
 
 features:
   - icon: ✏️
-    title: 措辞严谨通顺
-    details: 基于对规范的深入理解，在不改变原文语意的同时，采用更严谨的表达和更通顺的句式。
+    title: 贴合中文习惯
+    details: 基于对规范的深入理解，在保持原文语意的同时，采用更贴合中文阅读习惯和思维模式的措辞和句式。
   - icon: 🤖
     title: AI 辅助翻译
     details: 使用 DeepL 和 ChatGPT 等大语言模型，实现翻译的辅助和润色，提高翻译的质量和效率。

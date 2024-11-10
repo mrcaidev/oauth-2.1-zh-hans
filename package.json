@@ -2,7 +2,7 @@
   "name": "oauth-2.1-zh-hans",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@9.12.3",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
@@ -12,6 +12,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/types": "^19.5.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",

@@ -1,3 +1,0 @@
-{
-  "*.{ts,json,md}": ["prettier --write --cache"]
-}

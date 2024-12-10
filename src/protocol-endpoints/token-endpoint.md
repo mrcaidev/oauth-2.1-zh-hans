@@ -4,7 +4,7 @@
 
 客户端获取令牌端点 URL 的方式不在本规范的范围内，但该 URL 通常在该服务的文档中提供，并在客户端开发期间进行配置，或者在授权服务器的元数据文档 [[RFC8414](https://www.rfc-editor.org/info/rfc8414)] 中提供，并在运行时以编程方式获取。
 
-令牌端点 URL **禁止**包含片段组件，**可以**包含一个 application/x-www-form-urlencoded 格式的查询组件 [[WHATWG.URL](https://url.spec.whatwg.org/)]。
+令牌端点 URL **禁止**包含片段组件，**可以**包含一个查询字符串组件（附录 C.1）。
 
 客户端在请求令牌端点时，**必须**使用 HTTP POST 方法。
 
@@ -28,11 +28,11 @@
 
 ## 3.2.2. 令牌请求
 
-客户端使用 UTF-8 字符编码，以附录 B 中的 application/x-www-form-urlencoded 格式，在 HTTP 请求内容中发送以下参数，来请求令牌端点：
-
-**"client_id"：** 如果客户端未与授权服务器进行认证（如 3.2.1 节所述），则此参数是**必需**的。
+客户端使用 UTF-8 字符编码，以附录 C.2 中的表单编码序列化格式，在 HTTP 请求内容中发送以下参数，来请求令牌端点：
 
 **"grant_type"：** **必需**。客户端在该次令牌请求中使用的授权许可类型标识符。本规范定义的值有 authorization_code、refresh_token 和 client_credentials。授权许可类型决定了令牌请求所需的或支持的进一步参数。关于这些授权许可类型的详细信息在下面定义。
+
+**"client_id"：** **可选**。如果使用的客户端认证方法依赖该参数，或者 `grant_type` 要求公共客户端表明自己身份，那就会用到 `client_id`。
 
 机密客户端**必须**与授权服务器进行认证，如第 3.2.1 节所述。
 
@@ -62,7 +62,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 如果请求的客户端认证失败或无效，授权服务器就返回错误响应，如第 3.2.4 节所述。
 
-授权服务器在颁发访问令牌和可选的刷新令牌时，使用 [[RFC8259](https://www.rfc-editor.org/info/rfc8259)] 定义的 application/json 媒体类型，创建 HTTP 响应内容，其中包含以下参数和 HTTP 200（OK）状态码。
+授权服务器在颁发访问令牌和可选的刷新令牌时，使用 [[RFC8259](https://www.rfc-editor.org/info/rfc8259)] 定义的 application/json 媒体类型，按照附录 C.3 创建 HTTP 响应，其中包含以下参数和 HTTP 200（OK）状态码。
 
 **"access_token"：** **必需**。授权服务器颁发的访问令牌。
 
@@ -78,7 +78,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 如果授权服务器决定颁发刷新令牌，这些刷新令牌**必须**与资源所有者所同意的范围和资源服务器绑定。这是为了防止合法客户端的权限提升，并减轻刷新令牌泄漏的影响。
 
-这些参数被序列化为 JavaScript 对象表示（JSON）结构，被依次添加到 JSON 的最高结构层级。参数名称和字符串值以 JSON 字符串形式被包含。数字值以 JSON 数字形式被包含。参数的顺序不重要，可以改变。
+这些参数被序列化为 JSON 结构，如附录 C.3 所述。
 
 授权服务器**必须**在包含有令牌、凭据或其它敏感信息的任何响应中，包含 HTTP Cache-Control 响应头字段（参见 [[RFC9111](https://www.rfc-editor.org/info/rfc9111)] 的第 5.2 节），值为 no-store。
 
@@ -118,7 +118,7 @@ Cache-Control: no-store
 
 **"error_uri"：** **可选**。标识了人类可读的包含错误信息的网页的 URI，用于向客户端开发人员提供错误的更多信息。error_uri 参数的值**必须**符合 URI 引用语法，因此**禁止**包含集合 %x21 / %x23-5B / %x5D-7E 之外的字符。
 
-这些参数以 [[RFC7159](https://www.rfc-editor.org/info/rfc7159)] 定义的 application/json 媒体类型，包含在 HTTP 响应的内容中。这些参数被序列化为 JSON 结构，依次被添加到最高结构层级。参数名称和字符串值以 JSON 字符串形式被包含。数字值以 JSON 数字形式被包含。参数的顺序不重要，可以改变。
+这些参数以附录 C.3 中定义的 application/json 媒体类型，被包含在 HTTP 响应的内容中。
 
 例如：
 
@@ -128,6 +128,6 @@ Content-Type: application/json
 Cache-Control: no-store
 
 {
- "error":"invalid_request"
+ "error": "invalid_request"
 }
 ```

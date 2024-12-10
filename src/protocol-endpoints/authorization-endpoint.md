@@ -4,7 +4,7 @@
 
 客户端获取授权端点 URL 的方式不在本规范的范围内，但该 URL 通常在该服务的文档或授权服务器的元数据文档 [[RFC8414](https://www.rfc-editor.org/info/rfc8414)] 中提供。
 
-授权端点 URL **禁止**包含片段组件，**可以**包含一个 application/x-www-form-urlencoded 格式的查询组件 [[WHATWG.URL](https://url.spec.whatwg.org/)]。当添加额外的查询参数时，**必须**保留该查询组件。
+授权端点 URL **禁止**包含片段组件，**可以**包含一个查询字符串组件（附录 C.1）。当添加额外的查询参数时，**必须**保留该查询组件。
 
 授权服务器**必须**支持在授权端点使用 HTTP GET 方法 [[RFC9110](https://www.rfc-editor.org/info/rfc9110)] 第 9.3.1 节），**可以**同时支持 POST 方法 [[RFC9110](https://www.rfc-editor.org/info/rfc9110)] 第 9.3.3 节）。
 
@@ -14,4 +14,4 @@
 
 重定向可能包含用户凭据的请求的授权服务器**必须**避免意外转发这些用户凭据（详见第 7.5.4 节）。
 
-**禁止**支持跨源资源共享（也被称为 CORS）[[WHATWG.CORS](https://fetch.spec.whatwg.org/#http-cors-protocol)]，因为客户端并不直接访问授权端点，而是将用户代理重定向到该端点。
+**禁止**支持跨源资源共享 [[WHATWG.CORS](https://fetch.spec.whatwg.org/#http-cors-protocol)]，因为客户端并不直接访问授权端点，而是将用户代理重定向到该端点。

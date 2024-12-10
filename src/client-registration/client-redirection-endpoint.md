@@ -4,7 +4,7 @@
 
 在客户端注册的过程中，客户端预先与授权服务器上建立了一系列客户端重定向端点。授权服务器将用户代理重定向到这些端点中的其一。
 
-重定向 URI **必须**是由 [[RFC3986](https://www.rfc-editor.org/info/rfc3986)] 第 4.3 节定义的绝对 URI。重定向 URI **可以**包含一个 application/x-www-form-urlencoded 格式的查询部分（[[WHATWG.URL](https://url.spec.whatwg.org/)]），在添加额外的查询参数时**必须**保留该部分。重定向 URI **禁止**包含片段部分。
+重定向 URI **必须**是由 [[RFC3986](https://www.rfc-editor.org/info/rfc3986)] 第 4.3 节定义的绝对 URI。重定向 URI **可以**包含一个查询字符串（附录 C.1），后续在添加额外的查询参数时**必须**保留该部分。重定向 URI **禁止**包含片段部分。
 
 ## 2.3.1. 注册要求
 

@@ -9,4 +9,4 @@ OAuth 2.1 提供了内容丰富的授权框架，以及明确定义的安全属�
 - [[RFC7592](https://www.rfc-editor.org/info/rfc7592)]：客户端动态管理，提供了一种机制，更新动态注册的客户端的信息。
 - [[RFC7662](https://www.rfc-editor.org/info/rfc7662)]：令牌检查，定义了一种机制，让资源服务器获取访问令牌的相关信息。
 
-请参考[附录 C](/appendices/extensions)，以了解本规范发布时已知的扩展列表。
+请参考[附录 D](/appendices/extensions)，以了解本规范发布时已知的扩展列表。

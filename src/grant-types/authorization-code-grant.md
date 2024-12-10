@@ -54,13 +54,13 @@
 
 为了防止授权码注入和 CSRF 攻击，客户端在每个授权请求中，都使用一把唯一的密钥。客户端首先生成该密钥，然后在它拿到授权码时使用，来证明使用授权码的客户端就是请求授权码的客户端。
 
-客户端以附录 B 中的 application/x-www-form-urlencoded 格式，将以下参数添加到授权端点 URI 的查询组件中，来构建请求 URI：
+客户端如附录 C.1 所述，将以下参数添加到授权端点 URI 的查询组件中，来构建请求 URI：
 
 **"response_type":** **必需**。授权端点支持不同的请求参数和响应参数。客户端使用特定的 response_type 值，来决定流程的类型。本规范定义了值 code，该值必须用于表示客户端希望使用授权码流程。
 
 扩展的响应类型**可以**包含一个以空格（%x20）分隔的值列表，值的顺序不重要（例如，响应类型 a b 与 b a 相同）。这种组合式响应类型的含义，由它们各自的规范定义。
 
-（[[OpenID](https://openid.net/specs/openid-connect-core-1_0.html)]）定义了一些扩展响应类型。
+[[OpenID](https://openid.net/specs/openid-connect-core-1_0.html)] 定义了一些扩展响应类型。
 
 如果授权请求缺少 response_type 参数，或者 response_type 参数无法被理解，授权服务器**必须**返回错误响应，如第 4.1.2.1 节所述。
 
@@ -103,7 +103,7 @@ plain
   code_challenge = code_verifier
 ```
 
-如果客户端能够使用 S256，那么它就**必须**使用 S256，因为 S256 在服务器上是强制实现（MTI）的。仅当由于技术原因无法支持 S256 时，例如客户端没有可用的哈希函数，并且通过带外配置或授权服务器元数据（[[RFC8414](https://www.rfc-editor.org/info/rfc8414)]）得知服务器支持 plain 时，客户端才被允许使用 plain。
+如果客户端能够使用 S256，那么它就**必须**使用 S256，因为 S256 在服务器上是强制实现（MTI）的。仅当由于技术原因无法支持 S256 时，例如客户端没有可用的哈希函数，并且通过带外配置或授权服务器元数据 [[RFC8414](https://www.rfc-editor.org/info/rfc8414)] 得知服务器支持 plain 时，客户端才被允许使用 plain。
 
 代码质询的 ABNF 如下：
 
@@ -114,7 +114,7 @@ ALPHA = %x41-5A / %x61-7A
 DIGIT = %x30-39
 ```
 
-代码质询和代码验证器采用了 OAuth 2.0 扩展中称为“Proof-Key for Code Exchange”或 PKCE（[[RFC7636](https://www.rfc-editor.org/info/rfc7636)]）的技术。该技术在此被最先提出。
+代码质询和代码验证器采用了 OAuth 2.0 扩展中称为“Proof-Key for Code Exchange”或 PKCE [[RFC7636](https://www.rfc-editor.org/info/rfc7636)] 的技术。该技术在此被最先提出。
 
 授权服务器**必须**支持 code_challenge 和 code_verifier 参数。
 
@@ -144,7 +144,7 @@ Host: server.example.com
 
 ## 4.1.2. 授权响应
 
-如果资源所有者许可了访问权限的请求，那么授权服务器将颁发一个授权码，并以 application/x-www-form-urlencoded 格式，将下列参数添加到重定向 URI 的查询组件中，将其传递给客户端：
+如果资源所有者许可了权限请求，那么授权服务器就会颁发一个授权码，并使用如附录 C.1 所述的查询字符串序列化方法（除非某扩展另外定义），将下列参数添加到重定向 URI 的查询组件中，将其传递给客户端：
 
 **“code”：** **必须**。授权码由授权服务器生成，并且对客户端不透明。授权码**必须**在被颁发后的短时间内过期，以减少泄露的风险。授权码的最长寿命**建议**为 10 分钟。授权码与客户端标识符、代码质询和重定向 URI 绑定。
 
@@ -176,9 +176,9 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
 
 如果服务器不支持请求的 code_challenge_method 转换方法，那么授权端点**必须**返回授权错误响应，并将 error 值设置为 invalid_request。error_description 或 error_uri 的响应**应该**解释错误的性质，例如，不支持的转换算法。
 
-如果资源所有者拒绝了访问权限请求，或者请求由于除了重定向 URI 缺失或无效以外的其它原因而失败，那么授权服务器就以附录 B 中的 application/x-www-form-urlencoded 格式，将以下参数添加到重定向 URI 的查询组件中，来告知客户端：
+如果资源所有者拒绝了访问权限请求，或者请求由于除了重定向 URI 缺失或无效以外的其它原因而失败，那么授权服务器就如附录 C.1 所述，将以下参数添加到重定向 URI 的查询组件中，来告知客户端：
 
-**“error”：** **必需**。下列之一的 ASCII [[USASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11#USASCII)] 错误代码：
+**“error”：** **必需**。下列之一的 ASCII [[USASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12#USASCII)] 错误代码：
 
 - **“invalid_request”：** 请求缺少必需的参数，或者包含无效的参数值，或者重复包含同个参数，或者其它格式错误。
 - **“unauthorized_client”：** 客户端无权使用该方法来请求授权码。
@@ -190,7 +190,7 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
 
 error 参数的值**禁止**包含集合 %x20-21 / %x23-5B / %x5D-7E 之外的字符。
 
-**“error_description”：** **可选**。人类可读的 ASCII [[USASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11#USASCII)] 文本，提供额外信息，帮助客户端开发者理解发生的错误。error_description 参数的值**禁止**包含集合 %x20-21 / %x23-5B / %x5D-7E 之外的字符。
+**“error_description”：** **可选**。人类可读的 ASCII [[USASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12#USASCII)] 文本，提供额外信息，帮助客户端开发者理解发生的错误。error_description 参数的值**禁止**包含集合 %x20-21 / %x23-5B / %x5D-7E 之外的字符。
 
 **“error_uri”：** **可选**。标识了一个人类可读的网页的 URI，提供关于错误的信息，向客户端开发者提供额外的错误信息。error_uri 参数的取值**必须**符合 URI 引用语法，因此**禁止**包含集合 %x21 / %x23-5B / %x5D-7E 之外的字符。
 
@@ -210,11 +210,13 @@ Location: https://client.example.com/cb?error=access_denied
 
 在令牌端点上，该许可类型通过 grant_type 值为 authorization_code 来被标识。
 
-如果设置了该值，那么以下这些在第 3.2.2 节描述之外的、额外的令牌请求参数也是必需的：
+如果设置了该值，那么以下这些在第 3.2.2 节描述之外的、额外的令牌请求参数也被支持：
 
 **“code”：** **必需**。从授权服务器处接收到的授权码。
 
 **“code_verifier”：** 如果授权请求中包含了 code_challenge 参数，那么就是**必需**的，否则**禁止**使用。原始的代码验证器字符串。
+
+**“client_id”：**如果客户端没有如[第 3.2.1 节](/protocol-endpoints/token-endpoint)所述，与授权服务器进行认证，那么就是**必需**的。
 
 对于一个给定的授权码，授权服务器**必须**仅返回一次访问令牌。
 

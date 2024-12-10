@@ -21,23 +21,18 @@ Authorization: Bearer mF_9.B5f-4.1JqM
 ```
 token68    = 1*( ALPHA / DIGIT /
                  "-" / "." / "_" / "~" / "+" / "/" ) *"="
-credentials = "Bearer" 1*SP token68
+credentials = "bearer" 1*SP token68
 ```
 
 客户端应该使用 Bearer HTTP 认证方案，在 Authorization 请求头字段中发送访问令牌，以发起经过认证的请求。资源服务器**必须**支持这种方法。
 
-如 [RFC5234] 第 2.3 节所述， Bearer 字符串大小写不敏感。这意味着下列所有字符串都是 Authorization 请求头的有效用法：
+如 [[RFC9110](https://www.rfc-editor.org/info/rfc9110)] 第 11.1 节所述， 字符串“bearer”的大小写不敏感。这意味着下列所有字符串都是 Authorization 请求头的有效用法：
 
 ```http
 Authorization: Bearer mF_9.B5f-4.1JqM
-```
-
-```http
 Authorization: bearer mF_9.B5f-4.1JqM
-```
-
-```http
 Authorization: BEARER mF_9.B5f-4.1JqM
+Authorization: bEaReR mF_9.B5f-4.1JqM
 ```
 
 ## 5.1.2. 表单编码的内容参数
@@ -47,7 +42,7 @@ Authorization: BEARER mF_9.B5f-4.1JqM
 - HTTP 请求包含 Content-Type 头字段，其值为 application/x-www-form-urlencoded。
 - 内容遵循 URL 现行规范 [[WHATWG.URL](https://url.spec.whatwg.org/)] 定义的 application/x-www-form-urlencoded 的编码要求。
 - HTTP 请求内容是单块的。
-- 请求中要编码的内容**必须**全部由 ASCII [[UNASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11#USASCII)] 字符构成。
+- 请求中要编码的内容**必须**全部由 ASCII [[UNASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12#USASCII)] 字符构成。
 - 内容已经定义了 HTTP 请求方法的语义。特别是，这意味着 GET 方法被**禁止**使用。
 
 内容**可以**包含其它请求特定的参数。在这种情况下，access_token 参数**必须**使用“&”字符（ASCII 码为 38）与请求特定的参数分开。

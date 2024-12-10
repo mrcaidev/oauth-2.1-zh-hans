@@ -17,5 +17,3 @@
 ```
 +%25%26%2B%C2%A3%E2%82%AC
 ```
-
-GitHub 讨论：https://github.com/oauth-wg/oauth-v2-1/issues/128

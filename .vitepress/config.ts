@@ -385,11 +385,15 @@ export default defineConfig({
             link: "/use-of-application-x-www-form-urlencoded-media-type",
           },
           {
-            text: "附录 C. 扩展",
+            text: "附录 C. 序列化",
+            link: "/serializations",
+          },
+          {
+            text: "附录 D. 扩展",
             link: "/extensions",
           },
           {
-            text: "附录 D. 致谢",
+            text: "附录 E. 致谢",
             link: "/acknowledgements",
           },
           {

@@ -178,7 +178,7 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
 
 如果资源所有者拒绝了访问权限请求，或者请求由于除了重定向 URI 缺失或无效以外的其它原因而失败，那么授权服务器就以附录 B 中的 application/x-www-form-urlencoded 格式，将以下参数添加到重定向 URI 的查询组件中，来告知客户端：
 
-**“error”：** **必需**。下列之一的 ASCII [[USASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11#USASCII)] 错误代码：
+**“error”：** **必需**。下列之一的 ASCII [[USASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12#USASCII)] 错误代码：
 
 - **“invalid_request”：** 请求缺少必需的参数，或者包含无效的参数值，或者重复包含同个参数，或者其它格式错误。
 - **“unauthorized_client”：** 客户端无权使用该方法来请求授权码。
@@ -190,7 +190,7 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
 
 error 参数的值**禁止**包含集合 %x20-21 / %x23-5B / %x5D-7E 之外的字符。
 
-**“error_description”：** **可选**。人类可读的 ASCII [[USASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11#USASCII)] 文本，提供额外信息，帮助客户端开发者理解发生的错误。error_description 参数的值**禁止**包含集合 %x20-21 / %x23-5B / %x5D-7E 之外的字符。
+**“error_description”：** **可选**。人类可读的 ASCII [[USASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12#USASCII)] 文本，提供额外信息，帮助客户端开发者理解发生的错误。error_description 参数的值**禁止**包含集合 %x20-21 / %x23-5B / %x5D-7E 之外的字符。
 
 **“error_uri”：** **可选**。标识了一个人类可读的网页的 URI，提供关于错误的信息，向客户端开发者提供额外的错误信息。error_uri 参数的取值**必须**符合 URI 引用语法，因此**禁止**包含集合 %x21 / %x23-5B / %x5D-7E 之外的字符。
 

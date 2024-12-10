@@ -47,7 +47,7 @@ Authorization: BEARER mF_9.B5f-4.1JqM
 - HTTP 请求包含 Content-Type 头字段，其值为 application/x-www-form-urlencoded。
 - 内容遵循 URL 现行规范 [[WHATWG.URL](https://url.spec.whatwg.org/)] 定义的 application/x-www-form-urlencoded 的编码要求。
 - HTTP 请求内容是单块的。
-- 请求中要编码的内容**必须**全部由 ASCII [[UNASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11#USASCII)] 字符构成。
+- 请求中要编码的内容**必须**全部由 ASCII [[UNASCII](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12#USASCII)] 字符构成。
 - 内容已经定义了 HTTP 请求方法的语义。特别是，这意味着 GET 方法被**禁止**使用。
 
 内容**可以**包含其它请求特定的参数。在这种情况下，access_token 参数**必须**使用“&”字符（ASCII 码为 38）与请求特定的参数分开。

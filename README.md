@@ -7,7 +7,7 @@
     开始阅读
   </a>
   | 🔍
-  <a href="https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11" target="_blank" rel="noreferrer">
+  <a href="https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12" target="_blank" rel="noreferrer">
     规范原文
   </a>
 </div>

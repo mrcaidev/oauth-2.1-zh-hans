@@ -14,7 +14,7 @@ hero:
       link: /preface
     - theme: alt
       text: 规范原文
-      link: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11
+      link: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12
     - theme: alt
       text: GitHub
       link: https://github.com/mrcaidev/oauth-2.1-zh-hans

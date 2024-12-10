@@ -24,7 +24,7 @@ export default defineConfig({
     nav: [
       {
         text: "原文",
-        link: "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-11",
+        link: "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-12",
       },
       {
         text: "OAuth",

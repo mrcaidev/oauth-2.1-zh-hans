@@ -60,7 +60,7 @@
 
 扩展的响应类型**可以**包含一个以空格（%x20）分隔的值列表，值的顺序不重要（例如，响应类型 a b 与 b a 相同）。这种组合式响应类型的含义，由它们各自的规范定义。
 
-（[[OpenID](https://openid.net/specs/openid-connect-core-1_0.html)]）定义了一些扩展响应类型。
+[[OpenID](https://openid.net/specs/openid-connect-core-1_0.html)] 定义了一些扩展响应类型。
 
 如果授权请求缺少 response_type 参数，或者 response_type 参数无法被理解，授权服务器**必须**返回错误响应，如第 4.1.2.1 节所述。
 
@@ -103,7 +103,7 @@ plain
   code_challenge = code_verifier
 ```
 
-如果客户端能够使用 S256，那么它就**必须**使用 S256，因为 S256 在服务器上是强制实现（MTI）的。仅当由于技术原因无法支持 S256 时，例如客户端没有可用的哈希函数，并且通过带外配置或授权服务器元数据（[[RFC8414](https://www.rfc-editor.org/info/rfc8414)]）得知服务器支持 plain 时，客户端才被允许使用 plain。
+如果客户端能够使用 S256，那么它就**必须**使用 S256，因为 S256 在服务器上是强制实现（MTI）的。仅当由于技术原因无法支持 S256 时，例如客户端没有可用的哈希函数，并且通过带外配置或授权服务器元数据 [[RFC8414](https://www.rfc-editor.org/info/rfc8414)] 得知服务器支持 plain 时，客户端才被允许使用 plain。
 
 代码质询的 ABNF 如下：
 
@@ -114,7 +114,7 @@ ALPHA = %x41-5A / %x61-7A
 DIGIT = %x30-39
 ```
 
-代码质询和代码验证器采用了 OAuth 2.0 扩展中称为“Proof-Key for Code Exchange”或 PKCE（[[RFC7636](https://www.rfc-editor.org/info/rfc7636)]）的技术。该技术在此被最先提出。
+代码质询和代码验证器采用了 OAuth 2.0 扩展中称为“Proof-Key for Code Exchange”或 PKCE [[RFC7636](https://www.rfc-editor.org/info/rfc7636)] 的技术。该技术在此被最先提出。
 
 授权服务器**必须**支持 code_challenge 和 code_verifier 参数。
 

@@ -2,7 +2,7 @@
 
 客户端使用令牌端点，凭借如第 4 节和第 4.3 节所述的授权，来获取访问令牌。
 
-客户端获取令牌端点 URL 的方式不在本规范的范围内，但该 URL 通常在该服务的文档中提供，并在客户端开发期间进行配置，或者在授权服务器的元数据文档（[[RFC8414](https://www.rfc-editor.org/info/rfc8414)]）中提供，并在运行时以编程方式获取。
+客户端获取令牌端点 URL 的方式不在本规范的范围内，但该 URL 通常在该服务的文档中提供，并在客户端开发期间进行配置，或者在授权服务器的元数据文档 [[RFC8414](https://www.rfc-editor.org/info/rfc8414)] 中提供，并在运行时以编程方式获取。
 
 令牌端点 URL **禁止**包含片段组件，**可以**包含一个 application/x-www-form-urlencoded 格式的查询组件 [[WHATWG.URL](https://url.spec.whatwg.org/)]。
 
@@ -12,7 +12,7 @@
 
 **禁止**重复包含本规范定义的请求和响应参数。没有值的参数**必须**被视为从请求中省略。
 
-希望支持浏览器应用（仅在客户端 JavaScript 中运行、不访问后端服务器的应用）的授权服务器需要确保令牌端点支持必要的 CORS（[[WHATWG.CORS](https://fetch.spec.whatwg.org/#http-cors-protocol)]）头，以允许应用看到响应。如果授权服务器向应用提供了其它端点，例如元数据 URL、动态客户端注册、撤销、检查、发现或用户信息端点，那么这些端点也可以被浏览器应用访问，并且还需要定义 CORS 头以允许访问。详见 [[I-D.ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-15)]。
+希望支持浏览器应用（仅在客户端 JavaScript 中运行、不访问后端服务器的应用）的授权服务器需要确保令牌端点支持必要的 CORS [[WHATWG.CORS](https://fetch.spec.whatwg.org/#http-cors-protocol)] 头，以允许应用看到响应。如果授权服务器向应用提供了其它端点，例如元数据 URL、动态客户端注册、撤销、检查、发现或用户信息端点，那么这些端点也可以被浏览器应用访问，并且还需要定义 CORS 头以允许访问。详见 [[I-D.ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-15)]。
 
 ## 3.2.1. 客户端认证
 

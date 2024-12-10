@@ -21,23 +21,18 @@ Authorization: Bearer mF_9.B5f-4.1JqM
 ```
 token68    = 1*( ALPHA / DIGIT /
                  "-" / "." / "_" / "~" / "+" / "/" ) *"="
-credentials = "Bearer" 1*SP token68
+credentials = "bearer" 1*SP token68
 ```
 
 客户端应该使用 Bearer HTTP 认证方案，在 Authorization 请求头字段中发送访问令牌，以发起经过认证的请求。资源服务器**必须**支持这种方法。
 
-如 [RFC5234] 第 2.3 节所述， Bearer 字符串大小写不敏感。这意味着下列所有字符串都是 Authorization 请求头的有效用法：
+如 [[RFC9110](https://www.rfc-editor.org/info/rfc9110)] 第 11.1 节所述， 字符串“bearer”的大小写不敏感。这意味着下列所有字符串都是 Authorization 请求头的有效用法：
 
 ```http
 Authorization: Bearer mF_9.B5f-4.1JqM
-```
-
-```http
 Authorization: bearer mF_9.B5f-4.1JqM
-```
-
-```http
 Authorization: BEARER mF_9.B5f-4.1JqM
+Authorization: bEaReR mF_9.B5f-4.1JqM
 ```
 
 ## 5.1.2. 表单编码的内容参数

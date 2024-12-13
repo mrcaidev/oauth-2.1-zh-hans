@@ -26,7 +26,7 @@
 
 例如，使用内容参数刷新访问令牌（[第4.3节](/grant-types/refresh-token-grant)）的请求（额外换行仅为展示目的）：
 
-```
+```http
 POST /token HTTP/1.1
 Host: server.example.com
 Content-Type: application/x-www-form-urlencoded
@@ -41,7 +41,7 @@ grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA
 
 例如（额外换行仅为展示目的）：
 
-```
+```http
 Authorization: Basic czZCaGRSa3F0Mzo3RmpmcDBaQnIxS3REUmJuZlZkbUl3
 ```
 
